@@ -466,6 +466,8 @@ type ImageCopyArgs struct {
 
 	// The transfer mode, can be "pull" (default), "push" or "relay"
 	Mode string
+
+	Profiles []string
 }
 
 // The StoragePoolVolumeCopyArgs struct is used to pass additional options

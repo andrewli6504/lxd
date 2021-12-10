@@ -817,6 +817,8 @@ func (r *ProtocolLXD) CopyImage(source ImageServer, image api.Image, args *Image
 				req.Aliases = append(req.Aliases, args.Aliases...)
 			}
 		}
+
+		req.Profiles = append(req.Profiles, args.Profiles...)
 	}
 
 	return r.tryCopyImage(req, info.Addresses)
